@@ -31,3 +31,7 @@ Route::middleware([
 });
 
 Route::get('/all/category',[CategoryController::class,'index'])->name('AllCat');
+Route::post('/add-category',[CategoryController::class, 'create']);
+Route::get('/edit_category/{id}', [CategoryController::class, 'edit']);
+Route::post('/edit_category_confirm/{id}',[CategoryController::class, 'edit_confirm']);
+Route::get('/delete_category/{id}', [CategoryController::class, 'delete']);
