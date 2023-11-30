@@ -8,7 +8,7 @@
     <div class="py-12">
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <table class="table">
-          
+
   <thead>
     <tr>
       <th scope="col">Id</th>
@@ -26,14 +26,14 @@
         <tr>
             <th scope="row">{{$i++}}</th>
             <td>{{$category->category_name}}</td>
-            <td>{{$category->user_id}}</td> 
+            <td>{{$category->user_id}}</td>
             <td>{{$category->created_at->diffForHumans()}}</td>
             <td><a href="{{url('edit_category', $category->id)}}"><i class="bi bi-pencil-square"></i></a></td>
             <td><a href="{{url('delete_category', $category->id)}}" onclick="return confirm('Are you sure you want to delete this category?')"><i class="bi bi-trash-fill text-danger"></i></a></td>
          </tr>
         @endforeach
   </tbody>
-    
+
 </table>
         </div>
         <div class="container">
@@ -57,7 +57,7 @@
         </div>
     </div>
 </div>
-<!-- diego jumagdao -->
 
-   
+
+
 </x-app-layout>
